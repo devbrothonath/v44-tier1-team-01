@@ -1,0 +1,55 @@
+body{
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+}
+
+.first{
+    background-color: rgb(144, 149, 149);
+    height: 8vh;
+}
+
+.player{
+    display: flex;
+    justify-content: space-around;
+}
+
+.second{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    height: 50vh
+}
+
+
+.third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 36vh;
+    background-color: rgb(144, 149, 149);
+}
+
+button{
+    display: flex;
+    margin-top: 12px;
+    align-self: center;
+}
+
+.dice{
+    display: flex;
+    margin: 40px;
+    padding: 40px;
+}
+
+.box {
+    width: 45px;
+    height: 45px;
+    background-color: red; /* Adjust the color as desired */
+    margin: 5px; /* Adjust the margin to create spacing between the boxes */
+  }
+
+footer{
+    display: flex;
+    justify-content: center;
+}
