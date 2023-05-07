@@ -14,6 +14,12 @@ body{
     justify-content: space-around;
 }
 
+.time{
+    width: 50px;
+    background-color: snow;
+    padding: 4px;
+}
+
 .second{
     display: flex;
     background-color: white;
@@ -30,10 +36,8 @@ body{
     background-color: rgb(144, 149, 149);
 }
 
-button{
-    display: flex;
+#diceb{
     margin-top: 12px;
-    align-self: center;
 }
 
 .dice{
@@ -48,6 +52,12 @@ button{
     background-color: red; /* Adjust the color as desired */
     margin: 5px; /* Adjust the margin to create spacing between the boxes */
   }
+
+.restart{
+    position: absolute;
+    bottom: 85px;
+    right: 30px;
+}
 
 footer{
     display: flex;
