@@ -25,13 +25,13 @@ html,body{
     padding: 4px;
 }
 
-.second{
+/* .second{
     display: flex;
     background-color: white;
     justify-content: space-around;
     height: 50vh;
     overflow: auto;
-}
+} */
 
 
 .third{
