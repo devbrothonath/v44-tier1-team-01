@@ -1,4 +1,5 @@
-body{
+html,body{
+    height: -webkit-fill-available;
     display: flex;
     flex-direction: column;
     overflow:auto;
