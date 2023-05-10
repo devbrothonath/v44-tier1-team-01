@@ -25,13 +25,13 @@ html,body{
     padding: 4px;
 }
 
-.second{
+/* .second{
     display: flex;
     background-color: white;
     justify-content: space-around;
     height: 50vh;
     overflow: auto;
-}
+} */
 
 
 .third{
@@ -70,3 +70,33 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+
+/* CSS for grid part */
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding: auto;
+    position: relative;
+  }
+  
+  #container1,#container2 {
+    position: relative;
+    outline:2px solid #000;
+    font-size: 0;
+    margin:auto;
+    height: 320px;
+    width: 320px;
+    padding: 0;
+    border: none;
+  }
+  
+  .grid {
+    margin:auto;
+    padding:0;
+    border:none;
+    outline:1px solid #000;
+    display:inline-block;
+  }
