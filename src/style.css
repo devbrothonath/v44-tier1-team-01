@@ -1,12 +1,16 @@
 body{
-    height: 100%;
-    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    overflow:auto;
     margin: 0;
 }
 
 .first{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(144, 149, 149);
     height: 8vh;
+    overflow: auto;
 }
 
 .player{
@@ -24,7 +28,8 @@ body{
     display: flex;
     background-color: white;
     justify-content: space-around;
-    height: 50vh
+    height: 50vh;
+    overflow: auto;
 }
 
 
@@ -32,8 +37,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     height: 36vh;
     background-color: rgb(144, 149, 149);
+    overflow: auto;
 }
 
 #diceb{
@@ -54,9 +61,8 @@ body{
   }
 
 .restart{
-    position: absolute;
-    bottom: 85px;
-    right: 30px;
+  align-self: flex-end;
+  margin-right: 6px;
 }
 
 footer{
