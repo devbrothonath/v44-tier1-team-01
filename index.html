@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="first">
+      <div class="timerSection">
+        <button id="startGame" onclick="startTimer(this)">Start Game</button>
+        <p id="timer">05:00</p>
+      </div>
+      <sec class="player">
+        <div class="player1">
+          <h2>Player 1</h2>
+          <p>Wins: <span class="p1-count count">0</span></p>
+          <p>Lose: <span class="p1-count count">0</span></p>
+        </div>
+        <div class="player2">
+          <h2>Player 2</h2>
+          <p>Wins: <span class="p1-count count">0</span></p>
+          <p>Lose: <span class="p1-count count">0</span></p>
+        </div>
+      </sec>
+    </section>
+
+    <section class="grid-container">
+      <div id="container1"></div>
+      <div id="container2"></div>
+    </section>
+
+    <section class="third">
+      <button id="diceButton" onclick="rollDice()" disabled>
+        Roll the dice
+      </button>
+      <span class="dice">
+        <div class="box">
+          <img id="diceImage1" src="Images/dice6.png" />
+        </div>
+        <div class="box">
+          <img id="diceImage2" src="Images/dice6.png" />
+        </div>
+      </span>
+
+      <button id="submitButton" disabled>Submit</button>
+      <button id="remarkButton" onclick="remarkGrid(this)" disabled>Remark</button>
+      <button id="restartButton" onclick="restartGame()" disabled>
+        Restart the Game
+      </button>
+    </section>
+    <footer>
+      <a href="https://github.com/chingu-voyages/v44-tier1-team-01">
+        <img src="/image/github.png" alt="GitHub" />
+      </a>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
