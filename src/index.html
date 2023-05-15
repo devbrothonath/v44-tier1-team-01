@@ -5,28 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script src="./js/app.js"></script>
     <title>Document</title>
 </head>
 <body>
     <section class="first">
         <div class="time">Timer</div>
         <sec class="player">
-        <div>Player 1</div>
-        <div>Player 2</div>
-    </sec>
+            <div>Player 1</div>
+            <div>Player 2</div>
+        </sec>
     </section>
-    
+
     <section class="grid-container">
         <div id="container1"></div>
         <div id="container2"></div>
     </section>
-    
+
     <section class="third">
-        <button id="diceb">Roll the Dice</button>
-        <span class="dice">
-            <div class="box"></div>
-            <div class="box"></div>
+        <button id="diceb" type="button">Roll the Dice</button>
+        <div class="box">
+            <img id="diceImageOne" src="image/dice1.png" alt="dic" />
+        </div>
+        <div class="box">
+            <img id="diceImageTwo" src="image/dice2.png" alt="dic" />
+        </div>
         </span>
         <button>Submit</button>
         <button class="restart">Restart the Game</button>
@@ -34,7 +36,8 @@
     <footer>
         <a href="https://github.com/chingu-voyages/v44-tier1-team-01">
             <img src="./image/github.png" alt="GitHub" />
-          </a>
+        </a>
     </footer>
+    <script src="./js/app.js"></script>
 </body>
 </html>
