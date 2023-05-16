@@ -1,12 +1,13 @@
-html,body{
+html,
+body {
     height: -webkit-fill-available;
     display: flex;
     flex-direction: column;
-    overflow:auto;
+    overflow: auto;
     margin: 0;
 }
 
-.first{
+.first {
     display: flex;
     flex-direction: column;
     background-color: rgb(144, 149, 149);
@@ -14,12 +15,12 @@ html,body{
     overflow: auto;
 }
 
-.player{
+.player {
     display: flex;
     justify-content: space-around;
 }
 
-.time{
+.time {
     width: 50px;
     background-color: snow;
     padding: 4px;
@@ -33,22 +34,22 @@ html,body{
     overflow: auto;
 } */
 
-
-.third{
+.third {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 36vh;
+    min-height: 400px;
+    margin: 20px 0px;
     background-color: rgb(144, 149, 149);
-    overflow: auto;
+    overflow: scroll;
 }
 
-#diceb{
+#diceb {
     margin-top: 12px;
 }
 
-.dice{
+.dice {
     display: flex;
     margin: 40px;
     padding: 40px;
@@ -57,46 +58,67 @@ html,body{
 .box {
     width: 45px;
     height: 45px;
+    display: inline-flex;
     background-color: red; /* Adjust the color as desired */
     margin: 5px; /* Adjust the margin to create spacing between the boxes */
-  }
-
-.restart{
-  align-self: flex-end;
-  margin-right: 6px;
 }
 
-footer{
+.box img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.restart {
+    align-self: flex-end;
+    margin-right: 6px;
+}
+
+footer {
     display: flex;
     justify-content: center;
 }
-
-
+button {
+    background: rgb(65, 70, 146);
+    color: white;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    padding: 7px 18px;
+    border: 0px;
+}
+button:hover {
+    background: rgb(80, 83, 136);
+}
+button:disabled {
+    cursor: not-allowed;
+    background: rgb(58, 58, 64);
+}
 /* CSS for grid part */
-.grid-container{
+.grid-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     height: fit-content;
     padding: auto;
     position: relative;
-  }
-  
-  #container1,#container2 {
+}
+
+#container1,
+#container2 {
     position: relative;
-    outline:2px solid #000;
+    outline: 2px solid #000;
     font-size: 0;
-    margin:auto;
+    margin: auto;
     height: 320px;
     width: 320px;
     padding: 0;
     border: none;
-  }
-  
-  .grid {
-    margin:auto;
-    padding:0;
-    border:none;
-    outline:1px solid #000;
-    display:inline-block;
-  }
+}
+
+.grid {
+    margin: auto;
+    padding: 0;
+    border: none;
+    outline: 1px solid #000;
+    display: inline-block;
+}
