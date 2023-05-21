@@ -28,16 +28,18 @@
     </section>
 
     <section class="third">
-        <button id="diceb" type="button">Roll the Dice</button>
-        <div class="box">
-            <img id="diceImageOne" src="image/dice1.png" alt="dic" />
-        </div>
-        <div class="box">
-            <img id="diceImageTwo" src="image/dice2.png" alt="dic" />
-        </div>
+        <button id="diceButton" type="button">Roll the Dice</button disabled>
+        <span class="dice">
+            <div class="box">
+                <img id="diceImage1" src="image/dice1.png" alt="dic" />
+            </div>
+            <div class="box">
+                <img id="diceImage2" src="image/dice2.png" alt="dic" />
+            </div>
         </span>
-        <button>Submit</button>
-        <button class="restart">Restart the Game</button>
+        <button id="submitButton" disabled>Submit</button>
+        <button id="remarkButton" onclick="remarkGrid(this)" disabled>Remark</button>
+        <button id="restartButton" onclick="restartGame()" disabled>Restart the Game</button>
     </section>
     <footer>
         <a href="https://github.com/chingu-voyages/v44-tier1-team-01">
