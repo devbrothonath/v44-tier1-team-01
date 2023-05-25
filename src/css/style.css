@@ -5,12 +5,26 @@ body {
   flex-direction: column;
   overflow: auto;
   margin: 0;
+  background-image: linear-gradient(
+    to left top,
+    #79e0ee,
+    #7ae3e9,
+    #7de6e3,
+    #83e9dd,
+    #8bebd6,
+    #85e8cd,
+    #80e5c3,
+    #7de2b8,
+    #69d9a8,
+    #53d098,
+    #3cc788,
+    #1cbe77
+  );
 }
 
 .first {
   display: flex;
   flex-direction: column;
-  background-color: rgb(144, 149, 149);
   height: 15vh;
   overflow: auto;
 }
@@ -44,9 +58,10 @@ body {
   align-items: center;
   justify-content: space-around;
   height: 35vh;
-  background-color: rgb(144, 149, 149);
   overflow: auto;
 }
+
+/* Dice css part */
 
 #diceButton {
   margin-top: 12px;
@@ -90,6 +105,8 @@ body {
   border-radius: 5px;
 }
 
+/* Dice css part end */
+
 #restartButton {
   align-self: flex-end;
   margin-right: 6px;
@@ -101,7 +118,7 @@ footer {
 }
 
 #github {
-    width: 30px;
+  width: 30px;
 }
 
 button {
@@ -109,7 +126,7 @@ button {
   font-family: CircularStd, sans-serif;
   font-weight: 800;
   background-color: #3eb2fd;
-  background-image: linear-gradient(1deg, #4f58fd, #149bf3 99%);
+  background-image: linear-gradient(1deg, #4f58fd, #04e920 99%);
   background-size: calc(100% + 20px) calc(100% + 20px);
   color: white;
   cursor: pointer;
@@ -161,3 +178,5 @@ button:disabled {
 .green-color {
   background-color: green;
 }
+
+
