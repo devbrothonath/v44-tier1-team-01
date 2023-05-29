@@ -13,12 +13,12 @@
 <body>
     <section class="first">
         <div class="timerSection">
-            <button id="startGame" onclick="startTimer(this)">Start Game</button>
+            <button id="start" onclick="startGame(this)">Start Game</button>
             <p id="timer">05:00</p>
         </div>
         <sec class="player">
-            <div>Player 1</div>
-            <div>Player 2</div>
+            <div>Player 1<p id="score--0"></p>0</div>
+            <div>Player 2<p id="score--1"></p>0</div>
         </sec>
     </section>
 
@@ -38,7 +38,7 @@
             </div>
         </span>
         <button id="submitButton" disabled>Submit</button>
-        <button id="remarkButton" onclick="remarkGrid(this)" disabled>Remark</button>
+        <button id="remarkButton" disabled>Remark</button>
         <button id="restartButton" onclick="restartGame()" disabled>Restart the Game</button>
     </section>
     <footer>
