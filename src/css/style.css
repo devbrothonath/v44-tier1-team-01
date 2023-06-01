@@ -33,6 +33,7 @@ body {
 .player {
   display: flex;
   justify-content: space-around;
+  font-family: 'Schoolbell', cursive;
 }
 
 .timerSection {
