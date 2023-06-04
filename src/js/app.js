@@ -204,10 +204,10 @@ const getItem = (key) => {
   return localStorage.getItem(key);
 };
 
+// sets player1 and player2 names from user input and hides input
 function setPlayerName(num){
   const playerName = document.getElementById(`player${num}Name`);
   playerName.innerHTML = document.getElementById(`player${num}NameInput`).value;
-  
   // hides input field and button after submitting name
   document.getElementById(`divPlayer${num}Name`).style.display = 'none';
 }
