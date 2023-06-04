@@ -203,3 +203,11 @@ const setItem = (key, value) => {
 const getItem = (key) => {
   return localStorage.getItem(key);
 };
+
+function setPlayerName(num){
+  const playerName = document.getElementById(`player${num}Name`);
+  playerName.innerHTML = document.getElementById(`player${num}NameInput`).value;
+  
+  // hides input field and button after submitting name
+  document.getElementById(`divPlayer${num}Name`).style.display = 'none';
+}
