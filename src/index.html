@@ -17,9 +17,23 @@
             <button id="start" onclick="startGame(this)">Start Game</button>
         </div>
         <sec class="player">
-            <div>Player 1<p id="score--0"></p>0</div>
+            <div>
+                <div id="player1Name">Player 1: </div><br />
+                <div id="divPlayer1Name">
+                    <input type="text" id="player1NameInput" placeholder="Enter player1 name" />
+                    <button onclick="setPlayerName(1)">Set Name</button>
+                </div>
+                <p id="score--0"></p>0
+            </div>
             <p id="timer">05:00</p>
-            <div>Player 2<p id="score--1"></p>0</div>
+            <div>
+                <div id="player2Name">Player 2: </div><br />
+                <div id="divPlayer2Name">
+                    <input type="text" id="player2NameInput" placeholder="Enter player2 name" />
+                    <button onclick="setPlayerName(2)">Set Name</button>
+                </div>
+                <p id="score--1"></p>0
+            </div>
         </sec>
     </section>
 
