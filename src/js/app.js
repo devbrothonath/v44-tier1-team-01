@@ -21,6 +21,29 @@ let timeLeft = initialTime;
 let timeInterval;
 let currentScore, activePlayer;
 
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the elements
+  const welcomeSection = document.querySelector(".welcome-section");
+  const mainSection = document.querySelector(".main-section");
+  const startButton = document.getElementById("startButton");
+
+  // Hide the main section initially
+  mainSection.style.display = "none";
+
+  // Function to show the main section and hide the welcome section
+  function showMainSection() {
+    // Set player names
+    setPlayerNames();
+    
+    welcomeSection.style.display = "none";
+    mainSection.style.display = "block";
+  }
+
+  // Add click event listener to the start button
+  startButton.addEventListener("click", showMainSection);
+});
+
+
 window.onload = () => {
   // count of div elements to add
   const count = 100;
@@ -204,10 +227,25 @@ const getItem = (key) => {
   return localStorage.getItem(key);
 };
 
-// sets player1 and player2 names from user input and hides input
-function setPlayerName(num){
-  const playerName = document.getElementById(`player${num}Name`);
-  playerName.innerHTML = document.getElementById(`player${num}NameInput`).value;
-  // hides input field and button after submitting name
-  document.getElementById(`divPlayer${num}Name`).style.display = 'none';
+// Function to set player names
+function setPlayerNames() {
+  const player1Input = document.getElementById('player1NameInput');
+  const player2Input = document.getElementById('player2NameInput');
+  const player1Name = player1Input.value;
+  const player2Name = player2Input.value;
+  
+  const player1NameElement = document.getElementById('player1Name');
+  const player2NameElement = document.getElementById('player2Name');
+  
+  player1NameElement.textContent = player1Name;
+  player2NameElement.textContent = player2Name;
+  
+  player1Input.disabled = true;
+  player2Input.disabled = true;
 }
+// back button
+back = document.querySelector("#bac-btn");
+  back.addEventListener("click", () => {
+    location.reload();
+  });
+

@@ -23,6 +23,11 @@ body {
   );
 }
 
+h1{
+  font-family: 'Schoolbell', cursive;
+
+}
+
 .first {
   display: flex;
   flex-direction: column;
@@ -38,7 +43,7 @@ body {
 
 .timerSection {
   display: flex;
-  /* justify-content: center; */
+  justify-content: space-between;
 }
 
 #timer {
@@ -178,5 +183,63 @@ button:disabled {
 .green-color {
   background-color: green;
 }
+
+/* input page css */
+.welcome-section {
+  /* background-image: linear-gradient(
+    to left top,
+    #79e0ee,
+    #7ae3e9,
+    #7de6e3,
+    #83e9dd,
+    #8bebd6,
+    #85e8cd,
+    #80e5c3,
+    #7de2b8,
+    #69d9a8,
+    #53d098,
+    #3cc788,
+    #1cbe77
+  ); */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-section input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#startButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#startButton:hover {
+  background-color: #45a049;
+}
+
 
 

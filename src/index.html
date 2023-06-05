@@ -1,66 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Schoolbell&display=swap" rel="stylesheet">
-</head>
-<body>
-    <section class="first">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Schoolbell&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="welcome-section">
+        <div class="welcome-section">
+            <h1>Welcome to the Game!</h1>
+            <div class="input-section">
+              <label for="player1NameInput">Player 1:</label>
+              <input
+                type="text"
+                id="player1NameInput"
+                placeholder="Enter player 1 name"
+              />
+              <br />
+              <label for="player2NameInput">Player 2:</label>
+              <input
+                type="text"
+                id="player2NameInput"
+                placeholder="Enter player 2 name"
+              />
+              <br />
+              <button id="startButton">Start</button>
+            </div>
+          </div>
+    </div>
+
+    <div class="main-section">
+      <section class="first">
         <div class="timerSection">
-            <button id="start" onclick="startGame(this)">Start Game</button>
+          <button id="start" onclick="startGame(this)">Start Game</button>
+          <button id="bac-btn">New Game</button>
         </div>
         <sec class="player">
-            <div>
-                <div id="player1Name">Player 1: </div><br />
-                <div id="divPlayer1Name">
-                    <input type="text" id="player1NameInput" placeholder="Enter player1 name" />
-                    <button onclick="setPlayerName(1)">Set Name</button>
-                </div>
-                <p id="score--0"></p>0
-            </div>
-            <p id="timer">05:00</p>
-            <div>
-                <div id="player2Name">Player 2: </div><br />
-                <div id="divPlayer2Name">
-                    <input type="text" id="player2NameInput" placeholder="Enter player2 name" />
-                    <button onclick="setPlayerName(2)">Set Name</button>
-                </div>
-                <p id="score--1"></p>0
-            </div>
+          <div>
+            <div id="player1Name">Player 1:</div>
+            <br />
+            <p id="score--0"></p>
+            0
+          </div>
+          <p id="timer">05:00</p>
+          <div>
+            <div id="player2Name">Player 2:</div>
+            <br />
+            <p id="score--1"></p>
+            0
+          </div>
         </sec>
-    </section>
+      </section>
 
-    <section class="grid-container">
+      <section class="grid-container">
         <div id="container1"></div>
         <div id="container2"></div>
-    </section>
+      </section>
 
-    <section class="third">
+      <section class="third">
         <button id="diceButton" type="button" disabled>Roll the Dice</button>
         <span class="dice">
-            <div class="box">
-                <img id="diceImage1" src="image/dice1.png" alt="dic" />
-            </div>
-            <div class="box">
-                <img id="diceImage2" src="image/dice2.png" alt="dic" />
-            </div>
+          <div class="box">
+            <img id="diceImage1" src="image/dice1.png" alt="dic" />
+          </div>
+          <div class="box">
+            <img id="diceImage2" src="image/dice2.png" alt="dic" />
+          </div>
         </span>
         <button id="submitButton" disabled>Submit</button>
         <button id="remarkButton" disabled>Remark</button>
-        <button id="restartButton" onclick="restartGame()" disabled>Restart the Game</button>
-    </section>
-    <footer>
+        <button id="restartButton" onclick="restartGame()" disabled>
+          Restart the Game
+        </button>
+      </section>
+      <footer>
         <a href="https://github.com/chingu-voyages/v44-tier1-team-01">
-            <img src="./image/github.png" alt="GitHub" />
+          <img src="./image/github.png" alt="GitHub" />
         </a>
-    </footer>
+      </footer>
+    </div>
     <script src="./js/app.js"></script>
-</body>
+  </body>
 </html>
